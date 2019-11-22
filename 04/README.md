@@ -1,13 +1,11 @@
-These samples expect you to run Python 2.7 with the Azure Python SDK for Python. Hopefully the SDK becomes more stable with Python 3.x.
-
-When working in the Azure Cloud Shell, run the following commands to install the appropriate packages required by these samples:
+When working in the Azure Cloud Shell, run the following commands to install the appropriate packages required by these samples. If you're running locally (not in the Azure Cloud Shell), make sure your system is using Python 3 by default, and pip3 by default. Check with `python --version` and `pip --version`:
 
 ```
-pip2 install --user azurerm azure-cosmosdb-table
+pip install --user azurerm azure-cosmosdb-table azure-storage-queue==2.1.0
 ```
 
-To then run each sample in the Azure Cloud Shell, make sure you use the Python 2.7 binary. As an example:
+To then run each sample in the Azure Cloud Shell, such as:
 
 ```
-python2.7 storage_table_demo.py
+python storage_table_demo.py
 ```
